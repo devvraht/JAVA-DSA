@@ -1,0 +1,51 @@
+class OneDimeArray
+{
+	public static void main(String[]args)
+	{
+		
+
+		//Type I: where we create array 
+		// Allocate the memory for the array
+		//Initialize the data for the memory 
+		int a[]= new int[5];
+		a[0]=10;
+		a[1]=20;
+		a[2]=30;
+		a[3]=40;
+		a[4]=50;
+		System.out.println(a[4]); 	//Will Display only the output of the Specific memory mentioned
+		//Will display the complete data from start to end
+		for(int i=0;i<5;i++)
+		{
+			System.out.println(a[i]);
+		}
+		
+
+
+		//Type II : where we create and initialize at the same level 
+		int b[]={10,20,30,40,50};
+		//Will display the complete data from start to end
+		for(int n=0;n<5;n++)
+		{
+			System.out.println(b[n]);
+		}
+		System.out.println(b[4]);	//Will Display only the output of the Specific memory mentioned
+	}
+}
+
+
+//Output:
+//javac OneDimeArray.java
+//>java OneDimeArray
+//50
+//10
+//20
+//30
+//40
+//50
+//10
+//20
+//30
+//40
+//50
+//50
