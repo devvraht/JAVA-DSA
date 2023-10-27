@@ -1,0 +1,22 @@
+//By this we are importing the Scanner package 
+//Scanner will  be helping us to tak the input from the user 
+// I am writing * instead of Scanner because i am importing all the packages of the util class
+import java.util.*;
+  class UserDefinedArray
+    {
+      public static void main(String[]args)
+      {
+        int i;
+        int arr[]=new int[5];
+        System.out.println("Enter the Elements of the Array");
+        Scanner sc = new Scanner(System.in);
+        for(i=0;i<5;i++)
+          {
+            arr[i]=sc.nextInt();
+          }
+        for(i=0;i<5;i++)
+        {
+          System.out.println("Elements of the Array are"+arr[i]);
+        }
+      }
+  }
